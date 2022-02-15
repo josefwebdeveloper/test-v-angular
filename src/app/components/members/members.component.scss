@@ -1,0 +1,40 @@
+.members-container {
+  padding: 48px 0 0 7px;
+  width: 400px;
+  position: relative;
+}
+.logo-container{
+  width: 12%;
+  display: flex;
+  align-items: center;
+}
+.user {
+  display: flex;
+  align-items: center;
+  margin: 25px 0;
+}
+.name-container{
+  width: 45%;
+}
+.profession-container{
+}
+.logo {
+  width: 25px;
+  border-radius: 50%;
+  height: 25px;
+}
+.text{
+  font-size: 14px;
+  font-weight: 300;
+}
+.line-container{
+  border-top: 1px solid #EAEBEF;
+  position: absolute;
+  top: 95px;
+  z-index: 2;
+  width: 400px;
+}
+.users-list-container{
+  margin-top: 40px;
+}
+

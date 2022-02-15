@@ -1,0 +1,21 @@
+
+<div class="members-container">
+  <div class="line-container"></div>
+
+  <mat-card>
+    <div class="title text-sub-title">Members without a group</div>
+    <div class="users-list-container">
+      <div *ngFor="let user of users" class="user">
+        <div class="logo-container">
+          <img class="logo" [src]="user.logo" alt="logo">
+        </div>
+        <div class="name-container">
+          <div class="name text ">{{user.name}}</div>
+        </div>
+        <div class="profession-container">
+          <div class="profession text">{{user.profession}}</div>
+        </div>
+      </div>
+    </div>
+  </mat-card>
+</div>

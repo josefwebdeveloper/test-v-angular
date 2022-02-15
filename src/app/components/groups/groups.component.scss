@@ -1,0 +1,79 @@
+
+.grid-container {
+  width: 670px;
+
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  right: 15px;
+  bottom: 5px;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.mat-card-header-text {
+  margin: 0;
+  font-weight: 300;
+}
+
+.dashboard-card-content {
+  text-align: center;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.user-image {
+  background-size: cover;
+  position: relative;
+  border: 1px solid #EAEBEF;
+  box-sizing: border-box;
+}
+
+.user-amount {
+  background: #DCDFF5FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.user-icons-container {
+  width: calc(100% - 15px);
+}
+
+.user-icons-container {
+  display: flex;
+  flex-direction: row-reverse;
+
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+
+  .mat-icon {
+    font-size: 21px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.mat-dialog-container {
+  border-radius: 30px;
+}
+.dialog-text{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  color: #333333;
+}

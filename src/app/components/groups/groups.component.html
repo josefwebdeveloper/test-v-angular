@@ -1,0 +1,38 @@
+  <div *ngIf="groups && users" class="grid-container">
+    <span class="mat-h1 text-title">Groups</span>
+    <span class="text-sub-title left-10"> {{groups.length}} Groups</span>
+    <mat-grid-list cols="2" rowHeight="229px">
+      <mat-grid-tile *ngFor="let group of groups" [colspan]="1" [rowspan]="1">
+        <mat-card class="dashboard-card">
+          <mat-card-header>
+            <mat-card-title>
+              {{group.name}}
+              <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+                <mat-icon>more_horiz</mat-icon>
+              </button>
+              <mat-menu #menu="matMenu" xPosition="before">
+                <button mat-menu-item>
+                  <div (click)="deleteGroup(group.id)" class="button-container">
+                    <mat-icon>delete_outline</mat-icon>
+                    <span class="dialog-text">Delete group</span>
+                  </div>
+                </button>
+              </mat-menu>
+            </mat-card-title>
+          </mat-card-header>
+          <mat-card-content class="dashboard-card-content">
+            <div class="text-sub-title">{{users.length}} members</div>
+            <div class="user-icons-container">
+
+              <div *ngFor="let user of users| slice:0:5; index as i"
+                   [style]="{'background-image':'url(' + user.logo + ')', 'left':(i)*15+10+'px'}" mat-card-avatar
+                   class="user-image"></div>
+              <div mat-card-avatar class="user-image user-amount" [style]="{ 'left':85+'px'}">
+                +{{users.length - 5}}</div>
+
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
